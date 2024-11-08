@@ -1,0 +1,158 @@
+<div class="main-container">
+    <div class="left-contaiiner">
+      <div class="search-row">
+        <label for="">Item NO</label>
+        <input class="nolabel-input" type="text" />
+        <hr />
+  
+        <label for="">{{TotalDiscount}}</label>
+        <hr />
+        <label for="">Balance Due is {{balanceDue}}</label>
+        <hr />
+      </div>
+  
+      <div class="table-row">
+        <table style="width: 100%">
+          <thead>
+            <tr>
+              <th class="number">Number</th>
+              <th class="description">Description</th>
+              <th class="align-to-right">QTY</th>
+              <th class="align-to-right">Price</th>
+              <th class="align-to-right">Disc.%</th>
+              <th class="align-to-right">Amount</th>
+              <th>Prepayment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="number">{{ number }}</td>
+              <td class="description">{{ description }}</td>
+              <td class="align-to-right">{{ qty |number:'1.2-2' }}</td>
+              <td class="align-to-right">{{ price  |number:'1.2-2'}}</td>
+              <td class="align-to-right">{{ discountTable |number:'1.2-2'}}</td>
+              <td class="align-to-right">{{ amount |number:'1.2-2'}}</td>
+              <td class="align-to-right">{{ prepayment |number:'1.2-2' }}</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+  
+      <div class="button-array">
+        <div class="button-set">
+          <div class="col-1">
+            <button>Posted Sales Invoice(Ctrl+4)</button>
+            <button>Salesperson List(Ctrl+5)</button>
+            <button>Suspend (Ctrl+6)</button>
+          </div>
+          <div class="col-2">
+            <button>Lookup(Ctrl+7)</button>
+            <button>Sales Delivery(Ctrl+8)</button>
+            <button style="color: red">Void All (Ctrl+9)</button>
+          </div>
+  
+          <div class="col-3">
+            <button>View Points Or Customer Activate</button>
+            <button>Create Loyalty Customer</button>
+            <button>Empty Button</button>
+          </div>
+        </div>
+  
+        <div class="value-summry">
+          <div>
+            <strong class="strong-class">Total:</strong>
+            <span id="total">{{total}}</span>
+          </div>
+  
+          <div>
+            <strong class="strong-class">Discount:</strong>
+            <span id="discount">{{ discount |number:'1.2-2' }}</span>
+          </div>
+  
+          <div>
+            <strong class="strong-class">Payment:</strong>
+            <span id="payment">{{balance|number:'1.2-2'}}</span>
+          </div>
+  
+          <div>
+            <strong class="strong-class">Balance:</strong>
+            <span id="balance">{{balance |number:'1.2-2'}}</span>
+          </div>
+  
+          <div>
+            <strong class="strong-class">Prepayment:</strong>
+            <span id="prepayment">{{balance |number:"1.2-2"}}</span>
+          </div>
+  
+          <div>
+            <strong class="strong-class">Total:</strong>
+            <span id="final-total">{{finalTotal |number:'1.2-2'}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+    <div class="right-contaiiner">
+      <div class="button-set-two">
+        <div class="col-1">
+          <button>Lookup(Alt+1)</button>
+          <button style="color: blue;" (click)="sum()">SPO Advance(Alt+5)</button>
+          <button>Change Price(Alt+9)</button>
+
+        </div>
+        <div class="col-2" >
+          <button>Cash Customer(Alt+2)</button>
+          <button style="color: rgb(146, 1, 243);">Create & Select Customer</button>
+          <button >Change Qty (Alt+0)</button>
+
+        </div>
+  
+        <div class="col-3">
+          <button>Mark SPO (Alt+3)</button>
+          <button style="color: rgb(146, 1, 243);">Select Registerd Customer(Alt +7)</button>
+          <button>Sales Person (Alt+A)</button>
+       
+        </div>
+  
+        <div class="col-4">
+          <button>Total Check (Alt+4)</button>
+          <button style="color: blue;">  SPO Customer Information(Alt+8)</button>
+          <button> Internal Comments (Alt+B)</button>
+       
+        </div>
+        <div class="col-5">
+          <button>Line Comments</button>
+          <button style="color: green;">Line Disc.Amount(Alt+C)</button>
+          <button style="color: red;">Void Line(Alt +G)</button>
+        </div>
+        <div class="col-6">
+          <button></button>
+          <button style="color: green;">Line Discount% (Alt+D)  </button>
+          <button  style="color: red;">Cancle (Alt+H) </button>
+        </div>
+        <div class="col-7">
+          <button style="color: blue;">Quote No</button>
+          <button style="color: green;">Total Disk.% (Alt+E)  </button>
+          <button style="color: blue;">SPO Line Details (Alt+I)</button>
+        </div>
+        <div class="col-7">
+          <button disabled>Change Repair Charge</button>
+          <button style="color: green;">Total Disc. Amount (Alt+F)</button>
+          <button style="color: green;">TOTAL (Alt+J)</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <strong for="">{{sales}}</strong>
+    <strong for="">Staff:{{staff}}</strong>
+    <strong for="">Mgr:{{mgr}}</strong>
+    <strong for="">Recipt:{{recipt}}</strong>
+  </div>
+  
