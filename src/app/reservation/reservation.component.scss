@@ -1,0 +1,84 @@
+.main-divider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  margin: 1%;
+}
+.left-container {
+  border: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  div {
+    margin-left: 1%;
+  }
+  input {
+    margin-left: 10%;
+  }
+}
+.right-container {
+  border: 1px solid black;
+  margin: 1%;
+  padding: 1%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  div {
+    margin-left: 1%;
+  }
+  input {
+    margin-left: 1%;
+  }
+}
+.second-container {
+  border: 1px solid black;
+  margin: 1%;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr;
+  input {
+    margin: 1%;
+  }
+  button {
+    margin: 1%;
+  }
+}
+.second-main-divider {
+  border: 1px solid black;
+  margin: 1%;
+  padding: 1%;
+  input {
+    margin: 1%;
+  }
+  button {
+    margin: 1%;
+  }
+}
+
+.third-main-divider {
+  border: 1px solid black;
+  margin: 1%;
+  padding: 1%;
+  text-align: left;
+
+  input {
+    margin: 1%;
+  }
+}
+.lables {
+  margin: 1%;
+  margin-left: 12%;
+}
+.div-last {
+  margin: 1%;
+  margin-left: 1%;
+}
+.lablestwo {
+  margin: 1%;
+  margin-left: 5%;
+}
+.first-inputs {
+  input {
+    margin-left: 10%;
+  }
+}
