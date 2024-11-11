@@ -1,33 +1,44 @@
 .main-divider {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid black;
+  border: 3px solid red;
   margin: 1%;
 }
 .left-container {
-  border: 1px solid black;
+  border: 5px solid green;
   padding: 1%;
   margin: 1%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  
   div {
     margin-left: 1%;
+   
   }
   input {
-    margin-left: 10%;
+    margin-left: 1%;
+  }
+  .lables{
+   // border: 2px solid orange;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
 }
+
 .right-container {
-  border: 1px solid black;
+  border: 5px solid blue;
   margin: 1%;
   padding: 1%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  
   div {
     margin-left: 1%;
   }
   input {
-    margin-left: 1%;
+    margin-left: 20px;
+  }
+
+  .lables{
+   // border: 2px solid orange;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
 }
 .second-container {
@@ -81,4 +92,9 @@
   input {
     margin-left: 10%;
   }
+}
+
+
+label, input{
+  border: 2px solid orange;
 }

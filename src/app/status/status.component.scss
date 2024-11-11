@@ -1,0 +1,81 @@
+.body {
+  margin: 0%;
+  padding: 0%;
+}
+.main-divider {
+  border: 1px solid black;
+}
+.first-container {
+  border: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  div {
+    margin: 5px;
+  }
+  input {
+    width: 50%;
+  }
+}
+.lables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.second-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  div {
+    margin: 5px;
+  }
+  input {
+    margin: 1px;
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+}
+.label-for-MWH {
+  margin-left: 270px;
+}
+.intermediate-warehouse {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  div {
+    margin: 5px;
+  }
+  input {
+    margin: 1px;
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+}
+.final-divider {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  div {
+    margin: 5px;
+  }
+  input {
+    margin: 1px;
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+}
+input {
+  border: 3px solid orange;
+}
